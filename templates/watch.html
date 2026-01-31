@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Cinema Hub</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+*{box-sizing:border-box}
+
+body{
+  margin:0;
+  min-height:100vh;
+  background:linear-gradient(135deg,#0f0c29,#302b63,#24243e);
+  font-family:system-ui,-apple-system,BlinkMacSystemFont;
+  color:#fff;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.card{
+  width:92%;
+  max-width:480px;
+  background:rgba(0,0,0,.55);
+  backdrop-filter:blur(14px);
+  border-radius:18px;
+  padding:24px;
+  box-shadow:0 25px 60px rgba(0,0,0,.6);
+}
+
+.brand{
+  text-align:center;
+  margin-bottom:14px;
+}
+
+.brand h1{
+  margin:0;
+  font-size:26px;
+  letter-spacing:2px;
+}
+
+.brand span{
+  display:block;
+  margin-top:4px;
+  font-size:13px;
+  opacity:.8;
+}
+
+.player{
+  width:100%;
+  height:220px;
+  background:#000;
+  border-radius:14px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#777;
+  margin-bottom:18px;
+}
+
+.file{
+  font-size:12px;
+  opacity:.75;
+  word-break:break-all;
+  margin-bottom:16px;
+  text-align:center;
+}
+
+.btn{
+  display:block;
+  width:100%;
+  text-align:center;
+  padding:14px;
+  margin-top:10px;
+  border-radius:30px;
+  text-decoration:none;
+  font-weight:600;
+}
+
+.play{
+  background:#e50914;
+  color:#fff;
+}
+
+.download{
+  background:#1f1f1f;
+  color:#ddd;
+}
+
+.telegram{
+  background:linear-gradient(135deg,#1da1f2,#0d8ddb);
+  color:#fff;
+}
+
+.footer{
+  margin-top:16px;
+  text-align:center;
+  font-size:13px;
+  opacity:.7;
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+  <!-- BRAND -->
+  <div class="brand">
+    <h1>CINEMA HUB</h1>
+    <span>by Umang Mishra</span>
+  </div>
+
+  <!-- PLAYER PLACEHOLDER -->
+  <div class="player">
+    Video Player
+  </div>
+
+  <!-- FILE ID -->
+  <div class="file">
+    File ID:<br>{{ file_id }}
+  </div>
+
+  <!-- BUTTONS -->
+  <a class="btn play" href="#">▶ Play</a>
+  <a class="btn download" href="#">⬇ Download</a>
+  <a class="btn telegram" href="https://t.me/YourChannel" target="_blank">
+    📢 Join Telegram Channel
+  </a>
+
+  <div class="footer">
+    © Cinema Hub • All Rights Reserved
+  </div>
+
+</div>
+
+</body>
+</html>
